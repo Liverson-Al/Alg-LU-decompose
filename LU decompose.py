@@ -65,10 +65,11 @@ def tests(N):
     return (sizes,times)
 
 count=10
+dim=250
 s_arr=[]
 t_arr=[]
 for j in range(1,count):
-    s, t = tests(100)
+    s, t = tests(dim)
     s_arr.append(s)
     t_arr.append(t)
 s=np.array(s_arr[0])
